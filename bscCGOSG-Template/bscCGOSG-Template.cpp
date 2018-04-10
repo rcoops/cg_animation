@@ -601,10 +601,10 @@ void init(int argc, char** argv)
 	pPath->insert(fTime += 1.0f, osg::AnimationPath::ControlPoint(g_Tiles[2]->animationPoint(0, g_pRoot)));
 	pPath->insert(fTime += 1.0f, osg::AnimationPath::ControlPoint(g_Tiles[1]->animationPoint(0, g_pRoot)));
 	pPath->insert(fTime += 1.0f, osg::AnimationPath::ControlPoint(g_Tiles[0]->animationPoint(0, g_pRoot)));
-	pPath->insert(fTime += (40.0f / distance), osg::AnimationPath::ControlPoint(g_Tiles[0]->animationPoint(1, g_pRoot)));
+	pPath->insert(fTime += (60.0f / distance), osg::AnimationPath::ControlPoint(g_Tiles[0]->animationPoint(1, g_pRoot)));
 	pPath->insert(fTime += 1.0f, osg::AnimationPath::ControlPoint(g_Tiles[1]->animationPoint(1, g_pRoot)));
 	pPath->insert(fTime += 1.0f, osg::AnimationPath::ControlPoint(g_Tiles[2]->animationPoint(1, g_pRoot)));
-	pPath->insert(fTime += (60.0f / distance), osg::AnimationPath::ControlPoint(g_Tiles[3]->animationPoint(0, g_pRoot)));
+	pPath->insert(fTime += (40.0f / distance), osg::AnimationPath::ControlPoint(g_Tiles[3]->animationPoint(0, g_pRoot)));
 	g_Balls.push_back(new ballF(pPath));
 
 #ifdef example4

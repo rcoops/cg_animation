@@ -30,10 +30,9 @@ osg::Group *g_pRoot = 0;
 
 // uncomment only 1 of these
 //#define example1
-#define example2
+//#define example2
 //#define example3
-//#define example4
-
+#define example4
 
 // basic node printer
 class nodePrinter : public osg::NodeVisitor
@@ -609,6 +608,7 @@ void init(int argc, char** argv)
 
 #ifdef example4
 	osg::AnimationPath *pPath2 = new osg::AnimationPath();
+	// 0 bottom left, 1
 	pPath2->insert(0.0f, osg::AnimationPath::ControlPoint(g_Tiles[1]->animationPoint(0, g_pRoot)));
 	pPath2->insert(1.0f, osg::AnimationPath::ControlPoint(g_Tiles[3]->animationPoint(1, g_pRoot)));
 	pPath2->insert(2.0f, osg::AnimationPath::ControlPoint(g_Tiles[2]->animationPoint(2, g_pRoot)));
